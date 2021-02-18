@@ -2,57 +2,57 @@ export default [
     {
         id : 1,
         name : 'Thoma Le Bris',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 2,
         name : 'Titouan Escorneboueü',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 3,
         name : 'Charlotte Ménière',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 4,
         name : 'Julien Pardoel',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 5,
         name : 'Corentin Le Berre',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 6,
         name : 'Sébastien Avenet',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 7,
         name : 'Anthony Ringeisen',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 8,
         name : 'Karim Rahmoun',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 9,
         name : 'Redouane Gue(pas)chou',
-        attendance : false,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 10,
         name : 'Houria Benhassena',
-        attendance : true,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
     {
         id : 11,
         name : 'Joseph Carrières',
-        attendance : false,
+        comment : 'Élève chez Talis Développeur FullStack'
     },
 
 ];
