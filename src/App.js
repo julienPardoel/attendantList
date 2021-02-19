@@ -5,8 +5,8 @@ import List from './components/List';
 import Navbar from './components/NavBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Home from './pages/Projets';
-import Home from './pages/Contacts';
+import Projets from './pages/Projets';
+import Contacts from './pages/Contacts';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 
     <Router>
       <main>
-        <Navbar />
+        <Navbar/>
         <Switch>
           <Route path="Home" components={Home}>
             <section className="container">
@@ -30,6 +30,7 @@ function App() {
             
             <Route path="Projets" components={Projets}>
             </Route>
+            
             <Route path="Contacts" components={Contacts}> 
             </Route>
 
