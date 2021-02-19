@@ -17,7 +17,7 @@ function App() {
         <NavBar/>
         <Switch>
 
-          <Route path='/' components={Home}>
+          <Route path='/' exact component={Home}>
 
             <section className="container">
 
@@ -31,10 +31,11 @@ function App() {
 
           </Route>
             
-          <Route path="Projets" components={Projets}/>
+          <Route path="/projets" component={Projets}/>
+
           
 
-          <Route path="Contacts" components={Contacts}/> 
+          <Route path="/contacts" component={Contacts}/>
           
 
         </Switch>

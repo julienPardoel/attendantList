@@ -8,9 +8,9 @@ const NavBar = () => {
             <nav>
                 <img src="logoTalis.png" alt=""/>
                 <ul>
-                    <li><Link rel=""><a href="">Home</a></Link></li>
-                    <li><Link rel=""><a href="">Projets</a></Link></li>
-                    <li><Link rel=""><a href="">Contacts</a></Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/projets">Projets</Link></li>
+                    <li><Link to="/contacts">Contacts</Link></li>
                 </ul>
             </nav>
             
