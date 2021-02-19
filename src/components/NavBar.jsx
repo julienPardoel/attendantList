@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import './NavBar.css'
+import { NavLink } from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -8,9 +9,9 @@ const NavBar = () => {
             <nav>
                 <img src="logoTalis.png" alt=""/>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/projets">Projets</Link></li>
-                    <li><Link to="/contacts">Contacts</Link></li>
+                    <li><NavLink to="/" activeClassName="selected">Home</NavLink></li>
+                    <li><NavLink to="/projets" activeClassName="selected">Projets</NavLink></li>
+                    <li><NavLink to="/contacts" activeClassName="selected">Contacts</NavLink></li>
                 </ul>
             </nav>
             

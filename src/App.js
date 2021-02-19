@@ -1,44 +1,50 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import data from './data';
-import List from './components/List';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Projets from './pages/Projets';
 import Contacts from './pages/Contacts';
+import { Transition } from 'react-transition-group';
+import { gsap } from 'gsap';
 
+
+const routes = [
+  { path: "/", name: "Home", Component: Home },
+  { path: "/", name: "Projets", Component: Projets },
+  { path: "/", name: "Contacts", Component: Contacts },
+];
 
 function App() {
-  const [student, setStudent] = useState(data);
+
   return (
     <Router>
       <main>
-        <NavBar/>
-        <Switch>
+        <NavBar />
+        <section className="container">
+          <Transition>
+            <Switch>
+              {
+                routes.map(({ path, Component }) => (
+                  <routes key={path} exact path={path}>
+                    {({ match }) => (
 
-          <Route path='/' exact component={Home}>
+                      <>
+                        <Component />
+                      </>
 
-            <section className="container">
+                    )}
+                  </routes>
+                ))
+              }
+            </Switch>
+          </Transition>
+          <Route path='/' exact component={Home} />
+          <Route path="/projets" component={Projets} />
+          <Route path="/contacts" component={Contacts} />
 
-              <h2>Attendance List For {student.length} Students</h2>
+        </section>
 
-              <List student={student}/>
-
-              <button onClick={() => setStudent([])}>Clear list</button>
-
-            </section>
-
-          </Route>
-            
-          <Route path="/projets" component={Projets}/>
-
-          
-
-          <Route path="/contacts" component={Contacts}/>
-          
-
-        </Switch>
       </main>
     </Router>
   );

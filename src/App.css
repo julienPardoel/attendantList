@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+
+body{
+  background-color: grey;
+}
+
+h2{
+  color: white;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+  padding: 30px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+.student{
+  border: solid 3px black;
+  width:30%;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+  color: white;
+  border-radius: 20px;
+  
+}
+
+.student>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  height:50px
+}
+
+button{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px black;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+route{
+  display: flex;
+}
